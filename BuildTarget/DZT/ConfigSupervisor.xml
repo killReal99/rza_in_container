@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <Target name="MMS_DZT" functionality="MMS">
+        <Settings>
+            <Execution>
+                <Value name="args" value="-v MMS_DZT"/>
+                <Value name="location" value="DZT"/>
+                <Value name="forceStart" value="false"/>
+                <Value name="pathToBinary" value="../ISRZAFunction/MMS_ISRZAFunction"/>
+            </Execution>
+            <Network>
+                <Value name="Interface" value="enp2s0"/>
+                <Value name="IP" value="192.168.5.100/24"/>
+            </Network>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+                <Value name="Dir" value="./"/>
+                <Value name="FileOscillogram" value="DZT"/>
+            </FileSystem>
+        </Settings>
+    </Target>
+    <Target name="DZT" functionality="RZA">
+        <Settings>
+            <Network>
+                <Value name="Interface" value="enp2s0"/>
+            </Network>
+            <Execution>
+                <Value name="args" value="-v DZT"/>
+                <Value name="location" value="DZT"/>
+                <Value name="forceStart" value="true"/>
+                <Value name="pathToBinary" value="../ISRZAFunction/ISRZAFunction"/>
+            </Execution>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+                <Value name="Dir" value="./"/>
+                <Value name="FileOscillogram" value="DZT"/>
+            </FileSystem>
+        </Settings>
+        <SubTarget name="MMS_DZT"/>
+    </Target>
+    <Target name="GooseReceiver" functionality="RZA">
+        <Settings>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+            </FileSystem>
+            <Network>
+                <Value name="Interface" value="lo"/>
+                <Value name="Port" value="8881"/>
+                <Value name="IP" value="127.0.0.1/8"/>
+            </Network>
+            <Execution>
+                <Value name="pathToBinary" value="GooseReceiver"/>
+                <Value name="forceStart" value="true"/>
+            </Execution>
+        </Settings>
+    </Target>
+    <Target name="SuperSVSender" functionality="SV">
+        <Settings>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+            </FileSystem>
+            <Network>
+                <Value name="Interface" value="enp2s0"/>
+                <Value name="Port" value="8884"/>
+                <Value name="IP" value="192.168.5.100/24"/>
+            </Network>
+            <Execution>
+                <Value name="pathToBinary" value="SuperSVSender"/>
+                <Value name="forceStart" value="true"/>
+            </Execution>
+        </Settings>
+    </Target>
+    <Target name="SuperSVReceiver" functionality="RZA">
+        <Settings>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+            </FileSystem>
+            <Network>
+                <Value name="Interface" value="lo"/>
+                <Value name="Port" value="8881"/>
+                <Value name="IP" value="127.0.0.1/8"/>
+            </Network>
+            <Execution>
+                <Value name="pathToBinary" value="SuperSVReceiver"/>
+                <Value name="forceStart" value="true"/>
+            </Execution>
+        </Settings>
+    </Target>
+    <Target name="Supervisor" functionality="RZA, MMS, SV">
+        <Settings>
+            <FileSystem>
+                <Value name="Oscillogram" value="Oscillogram"/>
+            </FileSystem>
+            <Execution>
+                <Value name="typeSupervisor" value="SlaveBoard"/>
+            </Execution>
+            <Network>
+                <Value name="IP" value="127.0.0.1/8"/>
+                <Value name="Interface" value="enp2s0"/>
+                <Value name="Port" value="8881"/>
+                <Value name="PortMain" value="8881"/>
+                <Value name="IPMain" value="10.10.0.1/24"/>
+            </Network>
+        </Settings>
+        <NetworkControl/>
+        <RealZombieControl/>
+        <SatisfiedOfNeedControl/>
+        <StorageOfPossibleExecutableTargetControl/>
+        <WorkloadControl/>
+        <DeviceStateManagementControl/>
+        <ConfigChangedControl/>
+        <VirtualZombieControl/>
+    </Target>
+    <Settings>
+        <FileSystem>
+            <Value name="Oscillogram" value="Oscillogram"/>
+        </FileSystem>
+        <Network>
+            <Value name="Interface" value="enp2s0"/>
+        </Network>
+    </Settings>
+</Config>

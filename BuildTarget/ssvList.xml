@@ -1,0 +1,5 @@
+<SvListConfiguration>
+    <!--macDst = (Destination address); macSrc = (Source address); appID = (Application identifier); svID = (Sample value identifier); confRev = (Configuration revision); smpSynch = (Synchronization type)-->
+    <ObservableSV macDst="01:0C:CD:04:00:11" macSrc="70:B3:D5:54:25:A5" appID="0x4011" svID="NGrid_transformer_1_hv" confRev="1" smpSynch="1" activateFreqMeas="False" activateTestFreqMeas="False" oscillography="False"/>
+    <ObservableSV macDst="01:0C:CD:04:00:12" macSrc="70:B3:D5:54:25:BE" appID="0x4012" svID="NGrid_transformer_1_lv" confRev="1" smpSynch="1" activateFreqMeas="False" activateTestFreqMeas="False" oscillography="False"/>
+</SvListConfiguration>

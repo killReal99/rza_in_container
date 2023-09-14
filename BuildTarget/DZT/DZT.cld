@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd">
+    <Header id="" version="1" revision="1" toolID="" nameStructure=""/>
+    <Communication/>
+    <IED name="DZT" manufacturer="" desc="" type="">
+        <Services>
+            <DynAssociation/>
+            <SettingGroups>
+                <SGEdit/>
+            </SettingGroups>
+            <GetDirectory/>
+            <GetDataObjectDefinition/>
+            <GetDataSetValue/>
+            <DataSetDirectory/>
+            <ReadWrite/>
+            <GetCBValues/>
+            <GOOSE max="5"/>
+            <GSSE max="5"/>
+            <FileHandling/>
+            <GSEDir/>
+            <TimerActivatedControl/>
+        </Services>
+        <AccessPoint name="AP1">
+            <Server>
+                <Authentication/>
+                <LDevice inst="DR">
+                    <LN0 lnClass="LLN0" lnType="LLN0" inst="">
+                        <Private type="CLD_PROCESS">
+                            <SGCB actSG="1" numOfSGs="2">
+                                <SettingsGroup inOfSg="1">
+                                    <SettingValue ref="RDRE1.StoRte.setVal" value="1000"/>
+                                    <SettingValue ref="RDRE1.RcdMod.setVal" value="1"/>
+                                    <SettingValue ref="RDRE1.MaxNumRcd.setVal" value="500"/>
+                                    <SettingValue ref="RDRE1.MemFull.setVal" value="100"/>
+                                    <SettingValue ref="RDRE1.PerTrgTms.setVal" value="15000"/>
+                                    <SettingValue ref="RDRE1.PstTmms.setVal" value="3000"/>
+                                    <SettingValue ref="RDRE1.ExclTmms.setVal" value="0"/>
+                                    <SettingValue ref="RDRE1.TrgMod.setVal" value="3"/>
+                                    <SettingValue ref="RDRE1.PreTmms.setVal" value="1000"/>
+                                    <SettingValue ref="RDRE1.LevMod.setVal" value="0"/>
+                                </SettingsGroup>
+                                <SettingsGroup inOfSg="2">
+                                    <SettingValue ref="RDRE1.StoRte.setVal" value="1000"/>
+                                    <SettingValue ref="RDRE1.RcdMod.setVal" value="1"/>
+                                    <SettingValue ref="RDRE1.MaxNumRcd.setVal" value="500"/>
+                                    <SettingValue ref="RDRE1.MemFull.setVal" value="100"/>
+                                    <SettingValue ref="RDRE1.PerTrgTms.setVal" value="15000"/>
+                                    <SettingValue ref="RDRE1.PstTmms.setVal" value="3000"/>
+                                    <SettingValue ref="RDRE1.ExclTmms.setVal" value="0"/>
+                                    <SettingValue ref="RDRE1.TrgMod.setVal" value="3"/>
+                                    <SettingValue ref="RDRE1.PreTmms.setVal" value="1000"/>
+                                    <SettingValue ref="RDRE1.LevMod.setVal" value="0"/>
+                                </SettingsGroup>
+                            </SGCB>
+                        </Private>
+                    </LN0>
+                </LDevice>
+                <LDevice inst="PROT">
+                    <LN0 lnClass="LLN0" lnType="LLN0" inst="">
+                        <Private type="CLD_PROCESS">
+                            <SGCB actSG="1" numOfSGs="2">
+                                <SettingsGroup inOfSg="1">
+                                    <SettingValue ref="PDIF2.TmACrv2.setCharact" value="0"/>
+                                    <SettingValue ref="PHAR1.HMod.setVal" value="1"/>
+                                    <SettingValue ref="PDIF1.HiSet.setMag" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.OpMod.setVal" value="0"/>
+                                    <SettingValue ref="SIML2.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParA" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.VecGr2.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.U3.setMag" value="10500"/>
+                                    <SettingValue ref="RMXU1.BaseV.setVal" value="1"/>
+                                    <SettingValue ref="RMXU1.CompMod2.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParB" value="100"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParD" value="0.00000"/>
+                                    <SettingValue ref="SIML1.BlkTrMod.setVal" value="0"/>
+                                    <SettingValue ref="PHAR1.RsDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PHAR1.PhStr.setMag" value="12"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParC" value="0.25700"/>
+                                    <SettingValue ref="PHAR1.OpMod.setVal" value="1"/>
+                                    <SettingValue ref="SCTR1.UnbBlkLev.setMag" value="13.20000"/>
+                                    <SettingValue ref="PDIF2.HiSet.setMag" value="1381"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParB" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParA" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.NumHar.setVal" value="2"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParF" value="0.00000"/>
+                                    <SettingValue ref="PTRC1.TrMod.setVal" value="1"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParE" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParE" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.VecGr4.setVal" value="0"/>
+                                    <SettingValue ref="SIML2.BlkTrMod.setVal" value="0"/>
+                                    <SettingValue ref="SCTR1.BlkDlTmms.setVal" value="10000"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParB" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParE" value="0.00000"/>
+                                    <SettingValue ref="SIML2.BlkAlmMod.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParA" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.Ha2Tmms.setVal" value="250"/>
+                                    <SettingValue ref="RMXU1.U1.setMag" value="115000"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParA" value="45.60000"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParD" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.OpMod.setVal" value="2"/>
+                                    <SettingValue ref="PHAR1.HLev.setMag" value="0"/>
+                                    <SettingValue ref="RMXU1.U4.setMag" value="0"/>
+                                    <SettingValue ref="PHAR1.PhStp.setMag" value="4"/>
+                                    <SettingValue ref="RMXU1.CompMod4.setVal" value="0"/>
+                                    <SettingValue ref="PTRC1.TrPlsTmms2.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.CompMod1.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParC" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParD" value="200"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setCharact" value="0"/>
+                                    <SettingValue ref="RMXU1.U2.setMag" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParE" value="0.58700"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setCharact" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParC" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParD" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.OpMod.setVal" value="0"/>
+                                    <SettingValue ref="PTRC1.TrPlsTmms1.setVal" value="0"/>
+                                    <SettingValue ref="SIML1.BlkAlmMod.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.CompMod3.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParF" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.VecGr3.setVal" value="11"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParB" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParF" value="0.00000"/>
+                                    <SettingValue ref="SIML1.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setCharact" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParC" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParF" value="0.00000"/>
+                                </SettingsGroup>
+                                <SettingsGroup inOfSg="2">
+                                    <SettingValue ref="PDIF2.TmACrv2.setCharact" value="0"/>
+                                    <SettingValue ref="PHAR1.HMod.setVal" value="1"/>
+                                    <SettingValue ref="PDIF1.HiSet.setMag" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.OpMod.setVal" value="0"/>
+                                    <SettingValue ref="SIML2.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParA" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.OpMod.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParD" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.OpMod.setVal" value="2"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParD" value="0.00000"/>
+                                    <SettingValue ref="SIML1.BlkTrMod.setVal" value="0"/>
+                                    <SettingValue ref="PHAR1.RsDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParD" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.CompMod1.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParC" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setCharact" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParD" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="PHAR1.PhStr.setMag" value="12"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParC" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.OpMod.setVal" value="1"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParB" value="0.00000"/>
+                                    <SettingValue ref="SCTR1.UnbBlkLev.setMag" value="13.20000"/>
+                                    <SettingValue ref="PDIF2.HiSet.setMag" value="1381"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParE" value="0.00000"/>
+                                    <SettingValue ref="PTRC1.TrMod.setVal" value="1"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParE" value="0.00000"/>
+                                    <SettingValue ref="SIML2.BlkAlmMod.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.VecGr2.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.VecGr4.setVal" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParE" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.U3.setMag" value="10500"/>
+                                    <SettingValue ref="RMXU1.BaseV.setVal" value="1"/>
+                                    <SettingValue ref="PHAR1.NumHar.setVal" value="2"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParF" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParA" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setParA" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.Ha2Tmms.setVal" value="250"/>
+                                    <SettingValue ref="RMXU1.U1.setMag" value="115000"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParA" value="0.00000"/>
+                                    <SettingValue ref="PHAR1.HLev.setMag" value="0"/>
+                                    <SettingValue ref="RMXU1.VecGr3.setVal" value="11"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParB" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParE" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.U2.setMag" value="0"/>
+                                    <SettingValue ref="RMXU1.U4.setMag" value="0"/>
+                                    <SettingValue ref="PHAR1.PhStp.setMag" value="4"/>
+                                    <SettingValue ref="RMXU1.CompMod4.setVal" value="0"/>
+                                    <SettingValue ref="PTRC1.TrPlsTmms2.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParF" value="0.00000"/>
+                                    <SettingValue ref="RMXU1.CompMod3.setVal" value="0"/>
+                                    <SettingValue ref="SCTR1.BlkDlTmms.setVal" value="10000"/>
+                                    <SettingValue ref="SIML2.BlkTrMod.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParB" value="0.00000"/>
+                                    <SettingValue ref="SIML1.OpDlTmms.setVal" value="0"/>
+                                    <SettingValue ref="RMXU1.CompMod2.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setParB" value="0.00000"/>
+                                    <SettingValue ref="PDIF1.TmACrv1.setCharact" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParC" value="0.00000"/>
+                                    <SettingValue ref="PTRC1.TrPlsTmms1.setVal" value="0"/>
+                                    <SettingValue ref="SIML1.BlkAlmMod.setVal" value="0"/>
+                                    <SettingValue ref="PDIF1.TmACrv2.setParF" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv1.setCharact" value="0"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParC" value="0.00000"/>
+                                    <SettingValue ref="PDIF2.TmACrv2.setParF" value="0.00000"/>
+                                </SettingsGroup>
+                            </SGCB>
+                        </Private>
+                    </LN0>
+                </LDevice>
+                <LDevice inst="MEAS">
+                    <LN0 lnClass="LLN0" lnType="LLN0" inst="">
+                        <Private type="CLD_PROCESS">
+                            <CNCB>
+                                <Connection src="MEAS/LSVS1.CurrentA" dst="MEAS/MMXU1.CurrentA"/>
+                                <Connection src="MEAS/LSVS1.CurrentB" dst="MEAS/MMXU1.CurrentB"/>
+                                <Connection src="MEAS/LSVS1.CurrentC" dst="MEAS/MMXU1.CurrentC"/>
+                                <Connection src="MEAS/LSVS2.CurrentA" dst="MEAS/MMXU2.CurrentA"/>
+                                <Connection src="MEAS/LSVS2.CurrentB" dst="MEAS/MMXU2.CurrentB"/>
+                                <Connection src="MEAS/LSVS2.CurrentC" dst="MEAS/MMXU2.CurrentC"/>
+                                <Connection src="MEAS/LSVS1.CurrentA" dst="MEAS/MHAI1.CurrentA"/>
+                                <Connection src="MEAS/LSVS1.CurrentB" dst="MEAS/MHAI1.CurrentB"/>
+                                <Connection src="MEAS/LSVS1.CurrentC" dst="MEAS/MHAI1.CurrentC"/>
+                                <Connection src="MEAS/MMXU1.A" dst="PROT/PHAR1.A"/>
+                                <Connection src="MEAS/MHAI1.HA" dst="PROT/PHAR1.HA"/>
+                                <Connection src="MEAS/MMXU1.A" dst="PROT/RMXU1.A1"/>
+                                <Connection src="MEAS/MMXU2.A" dst="PROT/RMXU1.A3"/>
+                                <Connection src="PROT/RMXU1.DifAClc" dst="PROT/SCTR1.DifAClc"/>
+                                <Connection src="PROT/PTRC1.Op" dst="PROT/SCTR1.Blk">
+                                    <Connection src="general" dst="stVal"/>
+                                    <Connection src="q" dst="q"/>
+                                    <Connection src="t" dst="t"/>
+                                </Connection>
+                                <Connection src="PROT/PHAR1.Op" dst="PROT/PDIF1.ArrayBlk(0)"/>
+                                <Connection src="PROT/RMXU1.DifAClc" dst="PROT/PDIF1.DifAClc"/>
+                                <Connection src="PROT/RMXU1.RstA" dst="PROT/PDIF1.RstA"/>
+                                <Connection src="PROT/RMXU1.DifAClc" dst="PROT/PDIF2.DifAClc"/>
+                                <Connection src="PROT/PDIF1.Op" dst="PROT/PTRC1.ArrayOp(0)"/>
+                                <Connection src="PROT/PDIF2.Op" dst="PROT/PTRC1.ArrayOp(1)"/>
+                                <Connection src="PROT/PDIF1.Str" dst="PROT/PTRC1.ArrayStr(0)"/>
+                                <Connection src="PROT/PDIF2.Str" dst="PROT/PTRC1.ArrayStr(1)"/>
+                                <Connection src="PROT/SIML1.GasInsTr" dst="PROT/PTRC1.ArrayOp(2)">
+                                    <Connection src="stVal" dst="general"/>
+                                    <Connection src="q" dst="q"/>
+                                    <Connection src="t" dst="t"/>
+                                </Connection>
+                                <Connection src="PROT/SIML2.GasInsTr" dst="PROT/PTRC1.ArrayOp(3)">
+                                    <Connection src="stVal" dst="general"/>
+                                    <Connection src="q" dst="q"/>
+                                    <Connection src="t" dst="t"/>
+                                </Connection>
+                                <Connection src="MEAS/LGOS1.DynOutputs(1)" dst="PROT/SIML1.Alm" index="18">
+                                    <Connection src="stVal" dst="stVal" bType="BOOLEAN"/>
+                                    <Connection src="q" dst="q" bType="Quality"/>
+                                    <Connection src="t" dst="t" bType="Timestamp"/>
+                                </Connection>
+                                <Connection src="MEAS/LGOS1.DynOutputs(0)" dst="PROT/SIML1.Tr" index="15">
+                                    <Connection src="stVal" dst="stVal" bType="BOOLEAN"/>
+                                    <Connection src="q" dst="q" bType="Quality"/>
+                                    <Connection src="t" dst="t" bType="Timestamp"/>
+                                </Connection>
+                                <Connection src="MEAS/LGOS1.DynOutputs(2)" dst="PROT/SIML2.Tr" index="21">
+                                    <Connection src="stVal" dst="stVal" bType="BOOLEAN"/>
+                                    <Connection src="q" dst="q" bType="Quality"/>
+                                    <Connection src="t" dst="t" bType="Timestamp"/>
+                                </Connection>
+                                <Connection src="PROT/PHAR1.Str" dst="DR/RDRE1.ArrayStrRelayStr(0)"/>
+                                <Connection src="PROT/SCTR1.BlkOp" dst="DR/RDRE1.ArrayStrDiagn(0)"/>
+                                <Connection src="PROT/PDIF1.Str" dst="DR/RDRE1.ArrayStrRelayStr(1)"/>
+                                <Connection src="PROT/PDIF1.Op" dst="DR/RDRE1.ArrayStrRelayOp(0)"/>
+                                <Connection src="PROT/PDIF2.Str" dst="DR/RDRE1.ArrayStrRelayStr(2)"/>
+                                <Connection src="PROT/PDIF2.Op" dst="DR/RDRE1.ArrayStrRelayOp(1)"/>
+                                <Connection src="PROT/SIML1.GasInsTr" dst="DR/RDRE1.ArrayStrDiagn(1)"/>
+                                <Connection src="PROT/SIML1.GasInsAlm" dst="DR/RDRE1.ArrayStrDiagn(2)"/>
+                                <Connection src="PROT/SIML2.GasInsTr" dst="DR/RDRE1.ArrayStrDiagn(3)"/>
+                            </CNCB>
+                            <SGCB actSG="1" numOfSGs="2">
+                                <SettingsGroup inOfSg="1">
+                                    <SettingValue ref="LSVS2.SvCBRefReserve.setSrcRef" value="NGrid_transformer_1_lv_2"/>
+                                    <SettingValue ref="LSVS1.SvCBRef.setSrcRef" value="NGrid_transformer_1_hv"/>
+                                    <SettingValue ref="MMXU1.RisVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="LSVS1.CurrentMult.setMag" value="0.00100"/>
+                                    <SettingValue ref="LSVS1.VoltageMult.setMag" value="0.01000"/>
+                                    <SettingValue ref="MMXU1.RectVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="LSVS1.SvCBRefReserve.setSrcRef" value="NGrid_transformer_1_hv_2"/>
+                                    <SettingValue ref="LSVS2.CurrentMult.setMag" value="0.00100"/>
+                                    <SettingValue ref="LSVS2.PhsMult.setVal" value="1"/>
+                                    <SettingValue ref="LSVS2.VoltageMult.setMag" value="0.01000"/>
+                                    <SettingValue ref="MMXU1.RectVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.StrValI.setMag" value="5"/>
+                                    <SettingValue ref="MMXU2.RisVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.RectVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="LGOS1.GoCBRefReserve.setSrcRef" value="ENMU_203IO/LLN0$GO$gcb01"/>
+                                    <SettingValue ref="LSVS2.SvCBRef.setSrcRef" value="NGrid_transformer_1_lv"/>
+                                    <SettingValue ref="LGOS1.GoCBRef.setSrcRef" value="ENMU_201IO/LLN0$GO$gcb01"/>
+                                    <SettingValue ref="MMXU1.StrValI.setMag" value="1"/>
+                                    <SettingValue ref="MMXU2.RisVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU1.RisVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.StrValV.setMag" value="10"/>
+                                    <SettingValue ref="LSVS1.PhsMult.setVal" value="0"/>
+                                    <SettingValue ref="MMXU2.RectVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU1.StrValV.setMag" value="10"/>
+                                </SettingsGroup>
+                                <SettingsGroup inOfSg="2">
+                                    <SettingValue ref="LSVS2.SvCBRefReserve.setSrcRef" value="NGrid_transformer_1_lv_2"/>
+                                    <SettingValue ref="LSVS1.SvCBRef.setSrcRef" value="NGrid_transformer_1_hv"/>
+                                    <SettingValue ref="MMXU1.RisVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="LSVS1.CurrentMult.setMag" value="0.00100"/>
+                                    <SettingValue ref="LSVS1.VoltageMult.setMag" value="0.01000"/>
+                                    <SettingValue ref="MMXU1.RectVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="LSVS1.SvCBRefReserve.setSrcRef" value="NGrid_transformer_1_hv_2"/>
+                                    <SettingValue ref="LSVS2.CurrentMult.setMag" value="0.00100"/>
+                                    <SettingValue ref="LSVS2.PhsMult.setVal" value="1"/>
+                                    <SettingValue ref="LSVS2.VoltageMult.setMag" value="0.01000"/>
+                                    <SettingValue ref="MMXU1.RectVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.StrValI.setMag" value="5"/>
+                                    <SettingValue ref="MMXU2.RisVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.RectVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="LGOS1.GoCBRefReserve.setSrcRef" value="ENMU_203IO/LLN0$GO$gcb01"/>
+                                    <SettingValue ref="LSVS2.SvCBRef.setSrcRef" value="NGrid_transformer_1_lv"/>
+                                    <SettingValue ref="LGOS1.GoCBRef.setSrcRef" value="ENMU_201IO/LLN0$GO$gcb01"/>
+                                    <SettingValue ref="MMXU1.StrValI.setMag" value="1"/>
+                                    <SettingValue ref="MMXU2.RisVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU1.RisVal1.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU2.StrValV.setMag" value="10"/>
+                                    <SettingValue ref="LSVS1.PhsMult.setVal" value="0"/>
+                                    <SettingValue ref="MMXU2.RectVal2.setMag" value="0.00000"/>
+                                    <SettingValue ref="MMXU1.StrValV.setMag" value="10"/>
+                                </SettingsGroup>
+                            </SGCB>
+                        </Private>
+                    </LN0>
+                </LDevice>
+            </Server>
+        </AccessPoint>
+    </IED>
+    <DataTypeTemplates/>
+</SCL>

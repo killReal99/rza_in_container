@@ -1,0 +1,114 @@
+?xml version="1.0"?>
+<Config>
+
+    <Target name = "Supervisor" functionality="RZA, MMS, SV">
+        <Settings>
+            <Network>
+                <Value name="PortMain" value="8881" />
+                <Value name="IPMain" value="10.10.0.1/24" />
+
+                <Value name="Port" value="8881" />
+                <Value name="IP" value="127.0.0.1/8" />
+            </Network>
+            <Execution>
+                <Value name="typeSupervisor" value="SlaveBoard"/>
+            </Execution>
+        </Settings>
+        <NetworkControl />
+        <RealZombieControl />
+        <SatisfiedOfNeedControl />
+        <StorageOfPossibleExecutableTargetControl />
+        <WorkloadControl />
+        <DeviceStateManagementControl />
+        <ConfigChangedControl />
+	<VirtualZombieControl />
+        <NecessaryFunctionality>
+<!--            <SV />-->
+<!--            <Goose />-->
+        </NecessaryFunctionality>
+    </Target>
+
+    <Target name = "SuperSVReceiver" functionality="RZA">
+        <Settings>
+            <Execution>
+                <Value name="forceStart" value="true" />
+                <Value name="pathToBinary" value="{name}" />
+            </Execution>
+	<Network>
+		<Value name="Port" value="8881" />
+		<Value name="IP" value="127.0.0.1/8" />
+		<Value name="Interface" value="lo" />
+	</Network>  
+        </Settings>
+    </Target>
+    <Target name = "GooseReceiver" functionality="RZA">
+        <Settings>
+            <Execution>
+                <Value name="forceStart" value="true" />
+                <Value name="pathToBinary" value="{name}" />
+            </Execution>
+	<Network>
+		<Value name="Port" value="8881" />
+		<Value name="IP" value="127.0.0.1/8" />
+		<Value name="Interface" value="lo" />
+	</Network>
+        </Settings>
+    </Target>
+    <Target name = "SuperSVSender" functionality="SV">
+        <Settings>
+            <Execution>
+                <Value name="forceStart" value="true" />
+                <Value name="pathToBinary" value="{name}" />
+            </Execution>
+            <Network>
+                <Value name="Port" value="8884" />
+                <Value name="IP" value="192.168.5.100/24" />
+                <Value name="Interface" value="enp2s0" />
+            </Network>
+        </Settings>
+    </Target>
+
+    <Target name = "DZT" functionality="RZA">
+        <Settings>
+            <FileSystem>
+                <Value name="Dir" value="./" />
+                <Value name="FileOscillogram" value="{name}" />
+            </FileSystem>
+            <Execution>
+                <Value name="forceStart" value="true" />
+                <Value name="pathToBinary" value="../ISRZAFunction/ISRZAFunction" />
+                <Value name="location" value="{name}" />
+                <Value name="args" value="-v {name}" />
+            </Execution>
+        </Settings>
+        <SubTarget name="MMS_{name}" />
+    </Target>
+
+    <Target name = "MMS_DZT" functionality="MMS">
+        <Settings>
+            <FileSystem>
+                <Value name="Dir" value="./" />
+                <Value name="FileOscillogram" value="DZT" />
+            </FileSystem>
+            <Network>
+                <Value name="IP" value="192.168.5.100/24" />
+            </Network>
+            <Execution>
+                <Value name="forceStart" value="false" />
+                <Value name="pathToBinary" value="../ISRZAFunction/MMS_ISRZAFunction" />
+                <Value name="location" value="DZT" />
+                <Value name="args" value="-v {name}" />
+            </Execution>
+        </Settings>
+    </Target>
+
+    <Settings>
+        <Network>
+            <Value name="Interface" value="enp2s0" />
+        </Network>
+        <FileSystem>
+            <Value name="Oscillogram" value="Oscillogram" />
+        </FileSystem>
+    </Settings>
+
+</Config>

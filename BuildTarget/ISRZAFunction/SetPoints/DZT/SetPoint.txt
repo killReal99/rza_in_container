@@ -1,0 +1,119 @@
+ActiveGroup DZTPROT : 1
+ActiveGroup DZTDR : 1
+ActiveGroup DZTMEAS : 1
+
+
+-----------------------------------------------
+
+DZTMEAS/LSVS1.CurrentMult.setMag : 0.001
+DZTMEAS/LSVS1.VoltageMult.setMag : 0.01
+DZTMEAS/LSVS2.CurrentMult.setMag : 0.001
+DZTMEAS/LSVS2.VoltageMult.setMag : 0.01
+DZTMEAS.LSVS2.PhsMult.setVal : 1
+
+DZTMEAS/MMXU1.StrValI.setMag : 1
+DZTMEAS/MMXU1.StrValV.setMag : 10
+DZTMEAS/MMXU2.StrValI.setMag : 5
+DZTMEAS/MMXU2.StrValV.setMag : 10
+
+DZTPROT/RMXU1.BaseV.setVal : 1
+DZTPROT/RMXU1.U1.setMag : 115000
+DZTPROT/RMXU1.U2.setMag : 0
+DZTPROT/RMXU1.U3.setMag : 10500
+DZTPROT/RMXU1.U4.setMag : 0
+DZTPROT/RMXU1.VecGr2.setVal : 0
+DZTPROT/RMXU1.VecGr3.setVal : 11
+DZTPROT/RMXU1.VecGr4.setVal : 0
+DZTPROT/RMXU1.CompMod1.setVal : 0
+DZTPROT/RMXU1.CompMod2.setVal : 0
+DZTPROT/RMXU1.CompMod3.setVal : 0
+DZTPROT/RMXU1.CompMod4.setVal : 0
+DZTPROT/PHAR1.HLev.setMag : 0
+DZTPROT/PHAR1.PhStr.setMag : 12
+DZTPROT/PHAR1.PhStp.setMag : 4
+DZTPROT/PHAR1.RsDlTmms.setVal : 0
+DZTPROT/PHAR1.OpDlTmms.setVal : 0
+DZTPROT/PHAR1.HMod.setVal : 1
+DZTPROT/PHAR1.OpMod.setVal : 1
+DZTPROT/PHAR1.Ha2Tmms.setVal : 250
+DZTPROT/PHAR1.NumHar.setVal : 2
+DZTPROT/SCTR1.UnbBlkLev.setMag : 13.2
+DZTPROT/SCTR1.BlkDlTmms.setVal : 10000
+DZTPROT/PDIF1.TmACrv1.setParA : 45.6
+DZTPROT/PDIF1.TmACrv1.setParB : 100
+DZTPROT/PDIF1.TmACrv1.setParC : 0.257
+DZTPROT/PDIF1.TmACrv1.setParD : 200
+DZTPROT/PDIF1.TmACrv1.setParE : 0.587
+DZTPROT/PDIF2.HiSet.setMag : 1381
+DZTPROT/PDIF2.OpMod.setVal : 2
+DZTPROT/PTRC1.TrMod.setVal : 1
+DZTPROT/PTRC1.TrPlsTmms1.setVal : 0
+DZTPROT/PTRC1.TrPlsTmms2.setVal : 0
+
+DZTDR/RDRE1.PreTmms.setVal : 1000
+DZTDR/RDRE1.TrgMod.setVal : 3
+DZTDR/RDRE1.PstTmms.setVal : 3000
+DZTDR/RDRE1.MemFull.setVal : 100
+DZTDR/RDRE1.MaxNumRcd.setVal : 500
+DZTDR/RDRE1.PerTrgTms.setVal : 15000
+DZTDR/RDRE1.ExclTmms.setVal : 0
+DZTDR/RDRE1.RcdMod.setVal : 1
+DZTDR/RDRE1.StoRte.setVal : 1000
+
+
+-----------------------------------------------
+
+DZTMEAS/LSVS1.CurrentMult.setMag : 0.001
+DZTMEAS/LSVS1.VoltageMult.setMag : 0.01
+DZTMEAS/LSVS2.CurrentMult.setMag : 0.001
+DZTMEAS/LSVS2.VoltageMult.setMag : 0.01
+DZTMEAS.LSVS2.PhsMult.setVal : 1
+
+DZTMEAS/MMXU1.StrValI.setMag : 1
+DZTMEAS/MMXU1.StrValV.setMag : 10
+DZTMEAS/MMXU2.StrValI.setMag : 5
+DZTMEAS/MMXU2.StrValV.setMag : 10
+
+DZTPROT/RMXU1.BaseV.setVal : 1
+DZTPROT/RMXU1.U1.setMag : 115000
+DZTPROT/RMXU1.U2.setMag : 0
+DZTPROT/RMXU1.U3.setMag : 10500
+DZTPROT/RMXU1.U4.setMag : 0
+DZTPROT/RMXU1.VecGr2.setVal : 0
+DZTPROT/RMXU1.VecGr3.setVal : 11
+DZTPROT/RMXU1.VecGr4.setVal : 0
+DZTPROT/RMXU1.CompMod1.setVal : 0
+DZTPROT/RMXU1.CompMod2.setVal : 0
+DZTPROT/RMXU1.CompMod3.setVal : 0
+DZTPROT/RMXU1.CompMod4.setVal : 0
+DZTPROT/PHAR1.HLev.setMag : 0
+DZTPROT/PHAR1.PhStr.setMag : 12
+DZTPROT/PHAR1.PhStp.setMag : 4
+DZTPROT/PHAR1.RsDlTmms.setVal : 0
+DZTPROT/PHAR1.OpDlTmms.setVal : 0
+DZTPROT/PHAR1.HMod.setVal : 1
+DZTPROT/PHAR1.OpMod.setVal : 1
+DZTPROT/PHAR1.Ha2Tmms.setVal : 250
+DZTPROT/PHAR1.NumHar.setVal : 2
+DZTPROT/SCTR1.UnbBlkLev.setMag : 13.2
+DZTPROT/SCTR1.BlkDlTmms.setVal : 10000
+DZTPROT/PDIF1.TmACrv.setParA : 45.6
+DZTPROT/PDIF1.TmACrv.setParB : 100
+DZTPROT/PDIF1.TmACrv.setParC : 0.257
+DZTPROT/PDIF1.TmACrv.setParD : 200
+DZTPROT/PDIF1.TmACrv.setParE : 0.587
+DZTPROT/PDIF2.HiSet.setMag : 1381
+DZTPROT/PDIF2.OpMod.setVal : 2
+DZTPROT/PTRC1.TrMod.setVal : 1
+DZTPROT/PTRC1.TrPlsTmms1.setVal : 0
+DZTPROT/PTRC1.TrPlsTmms2.setVal : 0
+
+DZTDR/RDRE1.PreTmms.setVal : 1000
+DZTDR/RDRE1.TrgMod.setVal : 3
+DZTDR/RDRE1.PstTmms.setVal : 3000
+DZTDR/RDRE1.MemFull.setVal : 100
+DZTDR/RDRE1.MaxNumRcd.setVal : 500
+DZTDR/RDRE1.PerTrgTms.setVal : 15000
+DZTDR/RDRE1.ExclTmms.setVal : 0
+DZTDR/RDRE1.RcdMod.setVal : 1
+DZTDR/RDRE1.StoRte.setVal : 1000
