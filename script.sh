@@ -19,5 +19,6 @@ apt install wget make gcc g++ openssl tcpdump -y
 #echo "Cmake install!"
 
 echo "Start RZA!"
+cd BuildTarget
 chmod +x ./SupervisorBuildTarget
 ./SupervisorBuildTarget -c ConfigSupervisor.xml
