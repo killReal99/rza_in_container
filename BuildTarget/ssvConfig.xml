@@ -1,5 +1,5 @@
 <SuperSvConfiguration>
-    <InputNIC desc="Input network interface card (process bus)">enp2s0</InputNIC>
+    <InputNIC desc="Input network interface card (process bus)">enp0s3</InputNIC>
     <OutputNIC desc="Output network interface card (internal bus)">lo</OutputNIC>
     <NumCaptureThreads desc="Number capturing threads (Ring socket)">1</NumCaptureThreads>
     <WatcherIpDst desc="IP MAS (sending udp packets with sv list)">10.10.0.1</WatcherIpDst>

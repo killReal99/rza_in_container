@@ -9,7 +9,7 @@
                 <Value name="pathToBinary" value="../ISRZAFunction/MMS_ISRZAFunction"/>
             </Execution>
             <Network>
-                <Value name="Interface" value="enp2s0"/>
+                <Value name="Interface" value="enp0s3"/>
                 <Value name="IP" value="192.168.5.100/24"/>
             </Network>
             <FileSystem>
@@ -22,7 +22,7 @@
     <Target name="DZT" functionality="RZA">
         <Settings>
             <Network>
-                <Value name="Interface" value="enp2s0"/>
+                <Value name="Interface" value="enp0s3"/>
             </Network>
             <Execution>
                 <Value name="args" value="-v DZT"/>
@@ -60,7 +60,7 @@
                 <Value name="Oscillogram" value="Oscillogram"/>
             </FileSystem>
             <Network>
-                <Value name="Interface" value="enp2s0"/>
+                <Value name="Interface" value="enp0s3"/>
                 <Value name="Port" value="8884"/>
                 <Value name="IP" value="192.168.5.100/24"/>
             </Network>
@@ -96,7 +96,7 @@
             </Execution>
             <Network>
                 <Value name="IP" value="127.0.0.1/8"/>
-                <Value name="Interface" value="enp2s0"/>
+                <Value name="Interface" value="enp0s3"/>
                 <Value name="Port" value="8881"/>
                 <Value name="PortMain" value="8881"/>
                 <Value name="IPMain" value="10.10.0.1/24"/>
@@ -116,7 +116,7 @@
             <Value name="Oscillogram" value="Oscillogram"/>
         </FileSystem>
         <Network>
-            <Value name="Interface" value="enp2s0"/>
+            <Value name="Interface" value="enp0s3"/>
         </Network>
     </Settings>
 </Config>
