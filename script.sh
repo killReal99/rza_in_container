@@ -1,8 +1,8 @@
 #!/bin/bash
 
-apt update
+#apt update
 ##Cmake install
-apt install wget make gcc g++ openssl tcpdump -y
+#apt install wget make gcc g++ openssl tcpdump -y
 ##cd /root/
 #wget https://github.com/Kitware/CMake/releases/download/v3.27.4/cmake-3.27.4.tar.gz
 #tar -zxvf cmake-3.27.4.tar.gz
@@ -14,6 +14,8 @@ apt install wget make gcc g++ openssl tcpdump -y
 #export PATH="`pwd`/cmake-3.27.4/bin:$PATH"
 #cmake --version
 
-cd BuildTarget
-chmod +x ./SupervisorBuildTarget
-./SupervisorBuildTarget -c ConfigSupervisor.xml
+ip a
+
+#cd BuildTarget
+#chmod +x ./SupervisorBuildTarget
+#./SupervisorBuildTarget -c ConfigSupervisor.xml
