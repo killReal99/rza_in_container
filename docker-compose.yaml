@@ -3,13 +3,13 @@ version: '3.8'
 networks:
   net:
     name: rpa-network
-    driver: macvlan
-    driver_opts:
-      com.docker.network.macvlan.name: br_test
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.5.0/24
+#    driver: macvlan
+#    driver_opts:
+#      com.docker.network.macvlan.name: br_test
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 192.168.5.0/24
 
 services:
   rpa:
