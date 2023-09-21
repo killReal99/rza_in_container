@@ -3,7 +3,7 @@ version: '3.8'
 networks:
   net:
     name: rpa-network
-    external: true
+    driver: macvlan
     ipam:
       driver: default
       config:
