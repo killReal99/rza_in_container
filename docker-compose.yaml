@@ -5,7 +5,7 @@ networks:
     name: rpa-network
     driver: macvlan
     driver_opts:
-      com.docker.network.bridge.name: br_test
+      com.docker.network.macvlan.name: br_test
     ipam:
       driver: default
       config:
